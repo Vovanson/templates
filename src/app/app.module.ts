@@ -8,7 +8,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 @NgModule({
   declarations: [
     AppComponent,
-    InterpolationComponent
+    // InterpolationComponent
   ],
   imports: [
     BrowserModule,
