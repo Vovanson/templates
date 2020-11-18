@@ -1,1 +1,57 @@
-<p>interpolation works!</p>
+<div>
+    <h1>Interpolation and Template Expressions</h1>
+    <div>
+        <h3>Current customer: {{currentCustomer}}</h3>
+        <p>{{title}}</p>
+        <div><img src="{{itemImageUrl}}"></div>
+    
+        <h3>Evaluating template expressions </h3>
+        <h4>Simple evaluation (to a string):</h4>
+        <!-- "The sum of 1 + 1 is 2" -->
+        <p>The sum of 1 + 1 is {{1 + 1}}.</p>
+    
+        <!-- "The sum of 1 + 1 is not 4" -->
+        <p>The sum of 1 + 1 is not {{1 + 1 + getVal()}}.</p>
+    
+        <h4>You can't use:</h4>
+        - Assignments (=, +=, -=, ...)
+        <br />
+        - Operators such as new, typeof, instanceof, etc.
+        <br />
+        - Chaining expressions with ; or ,
+        <br />
+        - The increment and decrement operators ++ and --
+        <br />
+        - Some of the ES2015+ operators
+        <hr />
+    </div>
+
+ 
+    <h2>Expression Context</h2>
+    <div>
+        <div>
+            <h3>Component context, properties </h3>
+            <h4>{{recommended}}</h4>
+            <!-- refer to properties of the InstanceComponent -->
+            <img [src]="itemImageUrl2">
+        </div>
+
+        <div>
+            <h4>Template context, template input variables (let customer):</h4>
+            <ul>
+              <li *ngFor="let customer of customers">{{customer.name}}</li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Template context: template reference variables (#customerInput):</h4>
+            <label>Type something:
+                <input #customerInput (keyup)="0">{{customerInput.value}}
+            </label>
+        </div>
+    </div>
+</div>
+
+
+
+

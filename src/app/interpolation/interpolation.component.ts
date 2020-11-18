@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CUSTOMERS } from '../items/customers';
+
 @Component({
   selector: 'app-interpolation',
   templateUrl: './interpolation.component.html',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterpolationComponent implements OnInit {
 
-  constructor() { }
+  customers = CUSTOMERS;
+
+  currentCustomer = 'Lucas';
+  title = "Product";
+  itemImageUrl = '../assets/fish.jpeg';
+
+  recommended = 'You might also like:';
+  itemImageUrl2 = '../assets/new.jpg';
+
 
   ngOnInit(): void {
+    console.log(this.customers);
   }
+
+  getVal(): number { return 2; }
 
 }
