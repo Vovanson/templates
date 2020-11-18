@@ -43,10 +43,10 @@
             </ul>
         </div>
 
-        <div (keyup)="0">
+        <div>
             <h4>Template context: template reference variables (#customerInput):</h4>
             <label>Type something:
-                <input #customerInput>{{customerInput.value}}
+                <input #customerInput (keyup)="0">{{customerInput.value}}
             </label>
         </div>
     </div>

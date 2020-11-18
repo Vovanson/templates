@@ -20,6 +20,7 @@ export class InterpolationComponent implements OnInit {
 
 
   ngOnInit(): void {
+    console.log(this.customers);
   }
 
   getVal(): number { return 2; }
