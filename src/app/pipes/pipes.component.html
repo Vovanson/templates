@@ -1,0 +1,24 @@
+<h1>Pipes</h1>
+<hr>
+<p>The hero's birthday is {{ birthday | date }}</p>
+<p>The hero's birthday is {{ birthday | date:"MM/dd/yy" }} </p>
+<hr>
+<p>Transforming data with parameters</p>
+<p>The hero's birthday is {{ birthday | date:format }}</p>
+<button (click)="toggleFormat()">Toggle Format</button>
+<hr>
+<h2>Birthday Pipe Chaining</h2>
+<p>
+  The chained hero's birthday is
+  {{ birthday | date | uppercase}}
+</p>
+
+<p>
+  The chained hero's birthday is
+  {{  birthday | date:'fullDate' | uppercase}}
+</p>
+<p>
+  The chained hero's birthday is
+  {{ ( birthday | date:'shortDate' ) | uppercase}}
+</p>
+<hr>
