@@ -29,7 +29,9 @@ export class FlyingHeroesComponent {
     }
   }
 
-  reset() { this.heroes = HEROES.slice(); }
+  reset() { 
+      this.heroes = HEROES.slice();
+     }
 }
 
 ////// Identical except for impure pipe //////
