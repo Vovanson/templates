@@ -11,6 +11,9 @@ export class PipesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  name: string = '';
+  power = 5;
+  factor = 1;
 
   birthday = new Date(1988, 3, 15);
   toggle = true; // start with true == shortDate

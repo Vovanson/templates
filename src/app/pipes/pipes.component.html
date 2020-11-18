@@ -3,11 +3,11 @@
 <p>The hero's birthday is {{ birthday | date }}</p>
 <p>The hero's birthday is {{ birthday | date:"MM/dd/yy" }} </p>
 <hr>
-<p>Transforming data with parameters</p>
+<h4>Transforming data with parameters</h4>
 <p>The hero's birthday is {{ birthday | date:format }}</p>
 <button (click)="toggleFormat()">Toggle Format</button>
 <hr>
-<h2>Birthday Pipe Chaining</h2>
+<h4>Birthday Pipe Chaining</h4>
 <p>
   The chained hero's birthday is
   {{ birthday | date | uppercase}}
@@ -17,8 +17,21 @@
   The chained hero's birthday is
   {{  birthday | date:'fullDate' | uppercase}}
 </p>
-<p>
-  The chained hero's birthday is
-  {{ ( birthday | date:'shortDate' ) | uppercase}}
-</p>
 <hr>
+<div>
+    <h3>pipes for custom data transformations</h3>
+    <h4>Power</h4>
+    <p>Super power: {{2 | exponential: 10}}</p>
+</div>
+<hr>
+<div>
+    <h3>Power Boost Calculator</h3>
+    <div>Normal power: <input [(ngModel)]="power"></div>
+    <div>Boost factor: <input [(ngModel)]="factor"></div>
+    <p>
+      Super Power: {{power | exponential: factor}}
+    </p>
+</div>
+
+<hr>
+<app-flying-heroes></app-flying-heroes>
