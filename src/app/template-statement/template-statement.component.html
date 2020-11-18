@@ -1,1 +1,26 @@
-<p>template-statement works!</p>
+<h2>Expression context</h2>
+<hr><h3>Statement context</h3>
+    <p>Component statement context ( (click)="onSave() )
+        <div>
+          <button (click)="deleteHero()">Delete hero</button>
+        </div>
+        
+        <p>Template $event statement context</p>
+        <div>
+          <button (click)="onSave($event)">Save</button>
+        </div>
+        
+        <p>Template input variable statement context (let hero)</p>
+        <div>
+          <button *ngFor="let hero of heroes" (click)="deleteHero(hero)">{{hero.name}}</button>
+        </div>
+        
+        <p>Template reference variable statement context (#heroForm)</p>
+        <div>
+          <form #heroForm (ngSubmit)="onSubmit(heroForm)">
+               ... 
+            <button >Submit</button>
+          </form>
+         
+        </div>
+
