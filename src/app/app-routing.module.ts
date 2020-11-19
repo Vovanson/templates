@@ -9,6 +9,7 @@ import {PropetyBindingComponent} from './propety-binding/propety-binding.compone
 import {AttributeBindingComponent} from './attribute-binding/attribute-binding.component';
 import {EventBindingComponent} from './event-binding/event-binding.component';
 import {TwoWayBindingComponent} from './two-way-binding/two-way-binding.component';
+import {TemplExrpOperatorComponent} from './templ-exrp-operator/templ-exrp-operator.component';
 
 const routes: Routes = [
    { path: 'interpolation', component: InterpolationComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
    { path: 'attribute-binding', component: AttributeBindingComponent },
    { path: 'event-binding', component: EventBindingComponent },
    { path: 'two-way-binding', component: TwoWayBindingComponent },
+   { path: 'templ-exrp-operator', component: TemplExrpOperatorComponent },
   ];
 
 @NgModule({

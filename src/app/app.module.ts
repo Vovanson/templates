@@ -24,6 +24,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { ItemDetail2Component } from './event-binding/item-detail/item-detail2.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { SizerComponent } from './two-way-binding/sizer/sizer.component';
+import { TemplExrpOperatorComponent } from './templ-exrp-operator/templ-exrp-operator.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { SizerComponent } from './two-way-binding/sizer/sizer.component';
     EventBindingComponent,
     ItemDetail2Component,
     TwoWayBindingComponent,
-    SizerComponent
+    SizerComponent,
+    TemplExrpOperatorComponent
 
 
   
