@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,10 @@ import { TransformPipe } from './pipes/transform.pipe';
 import { ExponentialPipe } from './pipe/exponential.pipe';
 import { FlyingHeroesComponent,  FlyingHeroesImpureComponent} from './pipes/flying-heroes.component';
 import { FlyingHeroesPipe,  FlyingHeroesImpurePipe} from './pipe/flying-heroes.pipe';
-
+import { HeroAsyncMessageComponent } from './pipes/hero-async-message.component';
+import { FetchJsonPipe } from './pipe/fetch-json.pipe';
+import { BindingSyntaxComponent } from './binding-syntax/binding-syntax.component';
+import { PropetyBindingComponent } from './propety-binding/propety-binding.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { FlyingHeroesPipe,  FlyingHeroesImpurePipe} from './pipe/flying-heroes.p
     FlyingHeroesComponent,
     FlyingHeroesImpureComponent,
     FlyingHeroesPipe,
-    FlyingHeroesImpurePipe
+    FlyingHeroesImpurePipe,
+    HeroAsyncMessageComponent,
+    FetchJsonPipe,
+    BindingSyntaxComponent,
+    PropetyBindingComponent
 
 
   
@@ -33,6 +41,7 @@ import { FlyingHeroesPipe,  FlyingHeroesImpurePipe} from './pipe/flying-heroes.p
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
