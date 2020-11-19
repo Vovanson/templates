@@ -22,6 +22,8 @@ import { StringInitComponent } from './propety-binding/string-init/string-init.c
 import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { ItemDetail2Component } from './event-binding/item-detail/item-detail2.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { SizerComponent } from './two-way-binding/sizer/sizer.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { ItemDetail2Component } from './event-binding/item-detail/item-detail2.c
     StringInitComponent,
     AttributeBindingComponent,
     EventBindingComponent,
-    ItemDetail2Component
+    ItemDetail2Component,
+    TwoWayBindingComponent,
+    SizerComponent
 
 
   
