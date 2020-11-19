@@ -6,6 +6,7 @@ import {TemplateStatementComponent} from './template-statement/template-statemen
 import {PipesComponent} from './pipes/pipes.component';
 import {BindingSyntaxComponent} from './binding-syntax/binding-syntax.component';
 import {PropetyBindingComponent} from './propety-binding/propety-binding.component';
+import {AttributeBindingComponent} from './attribute-binding/attribute-binding.component';
 
 const routes: Routes = [
    { path: 'interpolation', component: InterpolationComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
    { path: 'pipes', component: PipesComponent },
    { path: 'binding-syntax', component: BindingSyntaxComponent },
    { path: 'propety-binding', component: PropetyBindingComponent },
+   { path: 'attribute-binding', component: AttributeBindingComponent },
 ];
 
 @NgModule({

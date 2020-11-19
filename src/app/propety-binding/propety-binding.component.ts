@@ -12,4 +12,19 @@ export class PropetyBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  itemImageUrl = '../assets/fish.jpeg';
+  isUnchanged = true;
+  classes = 'special';
+  parentItem = 'lamp';
+
+  currentItems = [{
+    id: 21,
+    name: 'phone'
+  }];
+
+  interpolationTitle = 'Interpolation';
+  propertyTitle = 'Property binding';
+
+  evilTitle = 'Template <script>alert("evil never sleeps")</script> Syntax';
+
 }
