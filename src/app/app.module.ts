@@ -16,6 +16,16 @@ import { HeroAsyncMessageComponent } from './pipes/hero-async-message.component'
 import { FetchJsonPipe } from './pipe/fetch-json.pipe';
 import { BindingSyntaxComponent } from './binding-syntax/binding-syntax.component';
 import { PropetyBindingComponent } from './propety-binding/propety-binding.component';
+import { ItemDetailComponent } from './propety-binding/item-detail/item-detail.component';
+import { ItemListComponent } from './propety-binding/item-list/item-list.component';
+import { StringInitComponent } from './propety-binding/string-init/string-init.component';
+import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { ItemDetail2Component } from './event-binding/item-detail/item-detail2.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { SizerComponent } from './two-way-binding/sizer/sizer.component';
+import { TemplExrpOperatorComponent } from './templ-exrp-operator/templ-exrp-operator.component';
+import { SvgComponent } from './svg/svg.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +42,17 @@ import { PropetyBindingComponent } from './propety-binding/propety-binding.compo
     HeroAsyncMessageComponent,
     FetchJsonPipe,
     BindingSyntaxComponent,
-    PropetyBindingComponent
+    PropetyBindingComponent,
+    ItemDetailComponent,
+    ItemListComponent,
+    StringInitComponent,
+    AttributeBindingComponent,
+    EventBindingComponent,
+    ItemDetail2Component,
+    TwoWayBindingComponent,
+    SizerComponent,
+    TemplExrpOperatorComponent,
+    SvgComponent
 
 
   
