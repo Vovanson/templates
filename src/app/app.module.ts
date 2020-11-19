@@ -25,6 +25,7 @@ import { ItemDetail2Component } from './event-binding/item-detail/item-detail2.c
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { SizerComponent } from './two-way-binding/sizer/sizer.component';
 import { TemplExrpOperatorComponent } from './templ-exrp-operator/templ-exrp-operator.component';
+import { SvgComponent } from './svg/svg.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { TemplExrpOperatorComponent } from './templ-exrp-operator/templ-exrp-ope
     ItemDetail2Component,
     TwoWayBindingComponent,
     SizerComponent,
-    TemplExrpOperatorComponent
+    TemplExrpOperatorComponent,
+    SvgComponent
 
 
   
