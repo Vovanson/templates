@@ -15,6 +15,7 @@ import { FlyingHeroesPipe,  FlyingHeroesImpurePipe} from './pipe/flying-heroes.p
 import { HeroAsyncMessageComponent } from './pipes/hero-async-message.component';
 import { FetchJsonPipe } from './pipe/fetch-json.pipe';
 import { BindingSyntaxComponent } from './binding-syntax/binding-syntax.component';
+import { PropetyBindingComponent } from './propety-binding/propety-binding.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BindingSyntaxComponent } from './binding-syntax/binding-syntax.componen
     FlyingHeroesImpurePipe,
     HeroAsyncMessageComponent,
     FetchJsonPipe,
-    BindingSyntaxComponent
+    BindingSyntaxComponent,
+    PropetyBindingComponent
 
 
   

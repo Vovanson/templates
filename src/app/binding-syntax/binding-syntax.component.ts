@@ -1,15 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-binding-syntax',
   templateUrl: './binding-syntax.component.html',
   styleUrls: ['./binding-syntax.component.scss']
 })
-export class BindingSyntaxComponent implements OnInit {
+export class BindingSyntaxComponent {
 
-  constructor() { }
+  @ViewChild('bindingInput') 
+   bindingInput: ElementRef;
 
-  ngOnInit(): void {
+  isUnchanged = true;
+
+  getHTMLAttributeValue(): any {
+    console.warn('HTML attribute value: ' + this.bindingInput.nativeElement.getAttribute('value'));
   }
 
+  getDOMPropertyValue(): any {
+    console.warn('DOM property value: ' + this.bindingInput.nativeElement.value);
+  }
+
+  working(): any {
+    console.warn('Test Button works!');
+  }
+
+  toggleDisabled(): any {
+
+    const testButton = document.getElementById('testButton') as HTMLInputElement;
+    testButton.disabled = !testButton.disabled;
+    console.warn(testButton.disabled);
+  }
 }
