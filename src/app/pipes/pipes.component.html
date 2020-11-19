@@ -38,3 +38,19 @@
 
 <hr>
 <app-flying-heroes-impure></app-flying-heroes-impure>
+
+<hr>
+<!-- async examples -->
+<app-hero-message></app-hero-message>
+
+<hr>
+<!-- Caching HTTP requests -->
+<h2>Heroes from JSON File</h2>
+
+<div *ngFor="let hero of ('../assets/heroes.json' | fetch) ">
+  {{hero.name}}
+</div>
+
+<p>Heroes as JSON:
+  {{'../assets/heroes.json' | fetch | json}}
+</p>`
