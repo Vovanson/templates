@@ -20,6 +20,8 @@ import { ItemDetailComponent } from './propety-binding/item-detail/item-detail.c
 import { ItemListComponent } from './propety-binding/item-list/item-list.component';
 import { StringInitComponent } from './propety-binding/string-init/string-init.component';
 import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { ItemDetail2Component } from './event-binding/item-detail/item-detail2.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { AttributeBindingComponent } from './attribute-binding/attribute-binding
     ItemDetailComponent,
     ItemListComponent,
     StringInitComponent,
-    AttributeBindingComponent
+    AttributeBindingComponent,
+    EventBindingComponent,
+    ItemDetail2Component
 
 
   

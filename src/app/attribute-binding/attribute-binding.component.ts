@@ -12,4 +12,10 @@ export class AttributeBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  actionName = 'Go for it';
+  isSpecial = true;
+  classExpression = 'special clearance';
+  styleExpression = 'color: red';
+  color = 'blue';
+
 }
