@@ -2,6 +2,7 @@
 
 <h2>Built-in attribute directives</h2>
 
+<!-- NgModel -->
 <h3 id="ngModel">NgModel (two-way) Binding</h3>
 
 <fieldset><h4>NgModel examples</h4>
@@ -34,6 +35,7 @@
   </p>
 </fieldset>
 
+<!--  NgClass -->
 <hr><h2 id="ngClass">NgClass Binding</h2>
 
 <p>currentClasses is {{currentClasses | json}}</p>
@@ -62,13 +64,11 @@
 <div class="helpful study course">Helpful study course</div>
 <div [ngClass]="{'helpful':false, 'study':true, 'course':true}">Study course</div>
 
-
-<!-- NgStyle binding -->
+<!-- NgStyle -->
 <hr><h3>NgStyle Binding</h3>
 <div [style.font-size]="isSpecial ? 'x-large' : 'smaller'">
   This div is x-large or smaller.
 </div>
-
 
 <h4>[ngStyle] binding to currentStyles - CSS property names</h4>
 <p>currentStyles is {{currentStyles | json}}</p>
@@ -76,8 +76,6 @@
 <div [ngStyle]="currentStyles">
   This div is initially italic, normal weight, and extra large (24px).
 </div>
-
-
 
 <br>
 <label>italic: <input type="checkbox" [(ngModel)]="canSave"></label> |
@@ -88,4 +86,8 @@
 <div [ngStyle]="currentStyles">
   This div should be {{ canSave ? "italic": "plain"}},
                   {{ isUnchanged ? "normal weight" : "bold" }} and,
-                  {{ isSpecial ? "extra large": "normal size"}} after clicking "Refresh".</div>
+                  {{ isSpecial ? "extra large": "normal size"}} after clicking "Refresh".
+</div>
+
+<hr>
+
