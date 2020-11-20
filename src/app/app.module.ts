@@ -26,6 +26,8 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { SizerComponent } from './two-way-binding/sizer/sizer.component';
 import { TemplExrpOperatorComponent } from './templ-exrp-operator/templ-exrp-operator.component';
 import { SvgComponent } from './svg/svg.component';
+import { TemplatesModule } from './templates/templates.module';
+import { DirectivesModule } from './directives/directives.module';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { SvgComponent } from './svg/svg.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TemplatesModule,
+    DirectivesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
