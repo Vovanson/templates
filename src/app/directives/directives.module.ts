@@ -8,6 +8,8 @@ import { ItemBuiltComponent } from './built-in/item-built/item-built.component';
 import { DirDashComponent } from './dir-dash/dir-dash.component';
 import { ItemSwitchComponents } from './built-in/item-switch.component';
 import { AttrDirectivesComponent } from './attr-directives/attr-directives.component';
+import { HighlightDirective } from './highlight.directive';
+import { StructurDirComponent } from './structur-dir/structur-dir.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { AttrDirectivesComponent } from './attr-directives/attr-directives.compo
     DirDashComponent,
     ItemBuiltComponent,
     ItemSwitchComponents,
-    AttrDirectivesComponent
+    AttrDirectivesComponent,
+    HighlightDirective,
+    StructurDirComponent
   ],
   imports: [
     CommonModule,

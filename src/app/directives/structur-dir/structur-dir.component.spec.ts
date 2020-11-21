@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AttrDirectivesComponent } from './attr-directives.component';
+import { StructurDirComponent } from './structur-dir.component';
 
-describe('AttrDirectivesComponent', () => {
-  let component: AttrDirectivesComponent;
-  let fixture: ComponentFixture<AttrDirectivesComponent>;
+describe('StructurDirComponent', () => {
+  let component: StructurDirComponent;
+  let fixture: ComponentFixture<StructurDirComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AttrDirectivesComponent ]
+      declarations: [ StructurDirComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AttrDirectivesComponent);
+    fixture = TestBed.createComponent(StructurDirComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
