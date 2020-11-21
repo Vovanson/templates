@@ -54,8 +54,7 @@ import { DirectivesModule } from './directives/directives.module';
     TwoWayBindingComponent,
     SizerComponent,
     TemplExrpOperatorComponent,
-    SvgComponent
-
+    SvgComponent,
 
   
   ],
