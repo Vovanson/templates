@@ -27,12 +27,19 @@ export class BuiltInComponent implements OnInit {
     name: 'Laura'
   };
 
+    // trackBy change counting
+    itemsNoTrackByCount   = 0;
+    itemsWithTrackByCount = 0;
+    itemsWithTrackByCountReset = 0;
+    itemIdIncrement = 1;
+
   constructor() { }
 
   ngOnInit(): void {
     this.resetItems();
     this.setCurrentClasses();
     this.setCurrentStyles();
+    this.itemsNoTrackByCount = 0;
   }
 
   setCurrentClasses() {
@@ -63,6 +70,12 @@ export class BuiltInComponent implements OnInit {
     this.item = this.currentItem;
   }
 
+  resetList() {
+    this.resetItems();
+    this.itemsWithTrackByCountReset = 0;
+    this.itemsNoTrackByCount = ++this.itemsNoTrackByCount;
+  }
+
   isActiveToggle() {
     this.isActive = !this.isActive;
   }
@@ -70,5 +83,21 @@ export class BuiltInComponent implements OnInit {
   giveNullCustomerValue() {
     this.nullCustomer = 'Kelly';
   }
+
+  changeIds() {
+    this.items.forEach(i => i.id += 1 * this.itemIdIncrement);
+    this.itemsWithTrackByCountReset = -1;
+    this.itemsNoTrackByCount = ++this.itemsNoTrackByCount;
+    this.itemsWithTrackByCount = ++this.itemsWithTrackByCount;
+  }
+
+  clearTrackByCounts() {
+    this.resetItems();
+    this.itemsNoTrackByCount = 0;
+    this.itemsWithTrackByCount = 0;
+    this.itemIdIncrement = 1;
+  }
+
+  trackByItems(index: number, item: Item): number { return item.id; }
 
 }

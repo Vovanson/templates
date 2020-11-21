@@ -6,13 +6,15 @@ import { DirectivesRoutingModule } from './directives-routing.module';
 import { BuiltInComponent } from './built-in/built-in.component';
 import { ItemBuiltComponent } from './built-in/item-built/item-built.component';
 import { DirDashComponent } from './dir-dash/dir-dash.component';
+import { ItemSwitchComponents } from './built-in/item-switch.component';
 
 
 @NgModule({
   declarations: [
     BuiltInComponent, 
     DirDashComponent,
-    ItemBuiltComponent
+    ItemBuiltComponent,
+    ItemSwitchComponents
   ],
   imports: [
     CommonModule,
