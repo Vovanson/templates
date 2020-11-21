@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AttrDirectivesComponent implements OnInit {
 
+  color: string;
+
   constructor() { }
 
   ngOnInit(): void {
