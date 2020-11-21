@@ -89,5 +89,39 @@
                   {{ isSpecial ? "extra large": "normal size"}} after clicking "Refresh".
 </div>
 
+
+<!-- Built-in structural directives -->
+<hr>
+<h2>Built-in structural directives</h2>
+<!-- NgIf Binding -->
+<h3 id="ngIf">NgIf Binding</h3>
+<div>
+  <p>If isActive is true, app-item-built will render: </p>
+  <app-item-built *ngIf="isActive" [item]="item"></app-item-built>
+
+  <button (click)="isActiveToggle()">Toggle app-tem-built</button>
+</div>
+<p>If currentCustomer isn't null, say hello to Laura:</p>
+<div *ngIf="currentCustomer">Hello, {{currentCustomer.name}}</div>
+<p>nullCustomer is null by default. NgIf guards against null. Give it a value to show it:</p>
+<div *ngIf="nullCustomer">Hello, <span>{{nullCustomer}}</span></div>
+<button (click)="giveNullCustomerValue()">Give nullCustomer a value</button>
+
+<h4>NgIf binding with template (no *)</h4>
+
+<ng-template [ngIf]="currentItem">Add {{currentItem.name}} with template</ng-template>
 <hr>
 
+<h4>Show/hide vs. NgIf</h4>
+
+<!-- isSpecial is true -->
+<div [class.hidden]="!isSpecial">Show with class</div>
+<div [class.hidden]="isSpecial">Hide with class</div>
+
+<p>ItemDetail is in the DOM but hidden</p>
+<app-item-built [class.hidden]="isSpecial" [item]="item"></app-item-built>
+
+<div [style.display]="isSpecial ? 'block' : 'none'">Show with style</div>
+<div [style.display]="isSpecial ? 'none'  : 'block'">Hide with style</div>
+
+<!-- NgFor Binding -->

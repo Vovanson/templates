@@ -21,6 +21,12 @@ export class BuiltInComponent implements OnInit {
   items: Item[];
   currentItem: Item;
 
+  isActive = true;
+  nullCustomer = null;
+  currentCustomer = {
+    name: 'Laura'
+  };
+
   constructor() { }
 
   ngOnInit(): void {
@@ -55,6 +61,14 @@ export class BuiltInComponent implements OnInit {
     this.items = Item.items.map(item => item.clone());
     this.currentItem = this.items[0];
     this.item = this.currentItem;
+  }
+
+  isActiveToggle() {
+    this.isActive = !this.isActive;
+  }
+
+  giveNullCustomerValue() {
+    this.nullCustomer = 'Kelly';
   }
 
 }
