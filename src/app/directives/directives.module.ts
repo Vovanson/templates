@@ -10,6 +10,8 @@ import { ItemSwitchComponents } from './built-in/item-switch.component';
 import { AttrDirectivesComponent } from './attr-directives/attr-directives.component';
 import { HighlightDirective } from './highlight.directive';
 import { StructurDirComponent } from './structur-dir/structur-dir.component';
+import { heroSwitchComponents } from './structur-dir/hero-switch.components';
+import { UnlessDirective } from './unless.directive';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { StructurDirComponent } from './structur-dir/structur-dir.component';
     ItemSwitchComponents,
     AttrDirectivesComponent,
     HighlightDirective,
-    StructurDirComponent
+    StructurDirComponent,
+    heroSwitchComponents,
+    UnlessDirective
   ],
   imports: [
     CommonModule,
