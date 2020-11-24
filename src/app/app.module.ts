@@ -28,6 +28,7 @@ import { TemplExrpOperatorComponent } from './templ-exrp-operator/templ-exrp-ope
 import { SvgComponent } from './svg/svg.component';
 import { TemplatesModule } from './templates/templates.module';
 import { DirectivesModule } from './directives/directives.module';
+import { DiModule } from './di/di.module';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,7 @@ import { DirectivesModule } from './directives/directives.module';
     TwoWayBindingComponent,
     SizerComponent,
     TemplExrpOperatorComponent,
-    SvgComponent,
+    SvgComponent
 
   
   ],
@@ -64,7 +65,8 @@ import { DirectivesModule } from './directives/directives.module';
     FormsModule,
     HttpClientModule,
     TemplatesModule,
-    DirectivesModule
+    DirectivesModule,
+    DiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
