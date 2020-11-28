@@ -1,12 +1,18 @@
 
+<h1>{{title}}</h1>
+
  <h2>Heroes</h2>
 
+
+ <app-hero-list></app-hero-list>
+
+ 
  <h2>User</h2>
  <p id="user">
    {{userInfo}}
    <button (click)="nextUser()">Next User</button>
  <p>
- <app-hero-list></app-hero-list>
+
  <app-heroes id="authorized" *ngIf="isAuthorized"></app-heroes>
  <app-heroes id="unauthorized" *ngIf="!isAuthorized"></app-heroes>
  <!-- <app-heroes-tsp id="tspAuthorized" *ngIf="isAuthorized"></app-heroes-tsp> -->
