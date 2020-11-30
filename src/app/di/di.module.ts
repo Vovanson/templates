@@ -21,6 +21,7 @@ import {
 } from './di-providers/di-providers.component';
 
 import { HierarInjModule } from './hierar-inj/hierar-inj.module';
+import { IOModule } from './i-o/i-o.module';
 
 import { Logger } from './logger.service';
 import { UserService } from './user.service';
@@ -48,7 +49,8 @@ import { APP_CONFIG, HERO_DI_CONFIG } from './app.config';
   imports: [
     CommonModule,
     DiRoutingModule,
-    HierarInjModule
+    HierarInjModule,
+    IOModule
   ],
   providers: [
     Logger,
