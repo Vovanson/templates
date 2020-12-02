@@ -16,6 +16,7 @@ export class AngDymamicFormsComponent implements OnInit {
 
   constructor(service: QuestionService) {
     this.questions$ = service.getQuestions();
+   
    }
 
   ngOnInit(): void {
