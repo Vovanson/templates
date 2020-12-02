@@ -29,6 +29,7 @@ import { SvgComponent } from './svg/svg.component';
 import { TemplatesModule } from './templates/templates.module';
 import { DirectivesModule } from './directives/directives.module';
 import { DiModule } from './di/di.module';
+import { AngFormsModule } from './ang-forms/ang-forms.module';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { DiModule } from './di/di.module';
     HttpClientModule,
     TemplatesModule,
     DirectivesModule,
-    DiModule
+    DiModule,
+    AngFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
