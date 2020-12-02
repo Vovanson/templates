@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { DynamicFormComponent } from './ang-dymamic-forms/dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './ang-dymamic-forms/dynamic-form-question/dynamic-form-question.component';
 
 import { AngFormsRoutingModule } from './ang-forms-routing.module';
 import { AngFormsComponent } from './ang-forms.component';
@@ -15,12 +19,15 @@ import { AngDymamicFormsComponent } from './ang-dymamic-forms/ang-dymamic-forms.
     AngReactiveFormsComponent,
     NameEditorComponent,
     ProfileEditorComponent,
-    AngDymamicFormsComponent
+    AngDymamicFormsComponent,
+    DynamicFormComponent, 
+    DynamicFormQuestionComponent
   ],
   imports: [
     CommonModule,
     AngFormsRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserModule
   ]
 })
 export class AngFormsModule { }
