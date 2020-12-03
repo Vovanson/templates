@@ -30,6 +30,7 @@ import { TemplatesModule } from './templates/templates.module';
 import { DirectivesModule } from './directives/directives.module';
 import { DiModule } from './di/di.module';
 import { AngFormsModule } from './ang-forms/ang-forms.module';
+import { HtppModuleModule } from './htpp-module/htpp-module.module';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,7 @@ import { AngFormsModule } from './ang-forms/ang-forms.module';
     TwoWayBindingComponent,
     SizerComponent,
     TemplExrpOperatorComponent,
-    SvgComponent
+    SvgComponent,
 
   
   ],
@@ -68,7 +69,8 @@ import { AngFormsModule } from './ang-forms/ang-forms.module';
     TemplatesModule,
     DirectivesModule,
     DiModule,
-    AngFormsModule
+    AngFormsModule,
+    HtppModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
