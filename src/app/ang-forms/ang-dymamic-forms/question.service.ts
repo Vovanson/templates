@@ -7,11 +7,12 @@ import { of } from 'rxjs';
 
 @Injectable()
 export class QuestionService {
+   questions: QuestionBase<string>[];
 
   // TODO: get from a remote source of question metadata
   getQuestions() {
 
-    const questions: QuestionBase<string>[] = [
+     this.questions = [
 
       new DropdownQuestion({
         key: 'brave',
@@ -41,6 +42,50 @@ export class QuestionService {
       })
     ];
 
-    return of(questions.sort((a, b) => a.order - b.order));
+    return of(this.questions.sort((a, b) => a.order - b.order));
   }
+
+  createQuestions(el) {
+
+    switch(el)
+    {
+      case 'dropdown': {
+        this.questions.push(
+          new DropdownQuestion({
+            key: 'brave2',
+            label: 'Bravery Rating2',
+            options: [
+              {key: 'solid2',  value: 'Solid2'},
+              {key: 'great2',  value: 'Great2'},
+              {key: 'good2',   value: 'Good2'},
+              {key: 'unproven2', value: 'Unproven2'}
+            ],
+            order: 5
+          })
+        );
+
+      }
+      break;
+
+      case 'textbox': {
+        this.questions.push(
+          new TextboxQuestion({
+            key: 'lasttName',
+            label: 'Last name',
+            value: '',
+            required: false,
+            order: 4
+          })
+        );
+        
+      }
+
+    }
+    
+    console.log(this.questions);
+
+
+  }
+
+
 }

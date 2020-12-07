@@ -13,4 +13,17 @@
     <div *ngIf="payLoad" class="form-row">
       <strong>Saved the following values</strong><br>{{payLoad}}
     </div>
-  </div>
+
+ 
+    <hr>
+</div>
+<div>
+  <div>Select type element form</div>
+<p>
+  <label *ngFor="let el of elForm">
+    <input type="radio" name="element" [(ngModel)]="element" [value]="el">{{el}}
+  </label>
+</p>
+<button (click)="addField(element)">Add element</button>
+
+</div>

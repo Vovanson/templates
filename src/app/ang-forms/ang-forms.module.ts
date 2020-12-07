@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { DynamicFormComponent } from './ang-dymamic-forms/dynamic-form/dynamic-form.component';
 import { DynamicFormQuestionComponent } from './ang-dymamic-forms/dynamic-form-question/dynamic-form-question.component';
@@ -27,7 +28,8 @@ import { AngDymamicFormsComponent } from './ang-dymamic-forms/ang-dymamic-forms.
     CommonModule,
     AngFormsRoutingModule,
     ReactiveFormsModule,
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ]
 })
 export class AngFormsModule { }
